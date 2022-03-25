@@ -64,12 +64,12 @@ app.get("/api", (req, res) => {
         .catch((error) => {
             console.log('error:', daerrorta)
         });
-
+        res.send(data)
 
 })
 
 
-app.listen(9004, () => {
+app.listen(process.env.PORT, () => {
     console.log("backend Started at port 9004");
 })
 
